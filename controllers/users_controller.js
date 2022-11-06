@@ -1,3 +1,5 @@
 module.exports.user = function (req, res) {
-  return res.send("<h1>user file</h1>");
+  return res.render("user_profile", {
+    title: "user profile",
+  });
 };
