@@ -8,6 +8,9 @@ const expressLayouts = require("express-ejs-layouts");
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
+//code used to connect the mongo db to the project
+const db = require("./config/mongoose");
+
 //use express router
 // We have to tell our app to use that library before requiring the routes in an index.js
 // file { entry point }.
