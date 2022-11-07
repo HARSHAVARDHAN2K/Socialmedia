@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/assets/css/layout.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <%- style %>
+        <title>Document</title>
 </head>
 
 <!-- to add the partials -->
@@ -13,5 +16,7 @@
     <!-- Variable content that we want to show -->
     <%- body %>
         <%- include('_footer'); %>
+
+            <%- script %>
 
 </html>

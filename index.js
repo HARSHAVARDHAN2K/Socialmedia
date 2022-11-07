@@ -13,7 +13,10 @@ app.set("views", "./views");
 // file { entry point }.
 app.use(expressLayouts);
 app.use("/", require("./routes"));
-
+app.use(express.static("./assets"));
+//Extract style and scripts from the sub pages into the layout using
+app.set("layout extractStyles", true);
+app.set("layout extractScripts", true);
 
 app.listen(port, function (err) {
   if (err) {
